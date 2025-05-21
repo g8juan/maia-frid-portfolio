@@ -1,0 +1,223 @@
+@import 'tailwindcss';
+
+@layer base {
+    body {
+        @apply font-sans;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+}
+
+@theme {
+    --font-serif: 'Faustina', serif;
+    --font-sans: 'Open Sans', sans-serif;
+}
+
+/* === Open Sans Font Definitions === */
+
+/* Open Sans Light */
+@font-face {
+    font-family: 'Open Sans';
+    src: url('/fonts/OpenSans-Light.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Open Sans';
+    src: url('/fonts/OpenSans-LightItalic.ttf') format('truetype');
+    font-weight: 300;
+    font-style: italic;
+    font-display: swap;
+}
+
+/* Open Sans Regular (Normal) */
+@font-face {
+    font-family: 'Open Sans';
+    src: url('/fonts/OpenSans-Regular.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Open Sans';
+    src: url('/fonts/OpenSans-Italic.ttf') format('truetype');
+    font-weight: 400;
+    font-style: italic;
+    font-display: swap;
+}
+
+/* Open Sans Medium */
+@font-face {
+    font-family: 'Open Sans';
+    src: url('/fonts/OpenSans-Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Open Sans';
+    src: url('/fonts/OpenSans-MediumItalic.ttf') format('truetype');
+    font-weight: 500;
+    font-style: italic;
+    font-display: swap;
+}
+
+/* Open Sans SemiBold */
+@font-face {
+    font-family: 'Open Sans';
+    src: url('/fonts/OpenSans-SemiBold.ttf') format('truetype');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Open Sans';
+    src: url('/fonts/OpenSans-SemiBoldItalic.ttf') format('truetype');
+    font-weight: 600;
+    font-style: italic;
+    font-display: swap;
+}
+
+/* Open Sans Bold */
+@font-face {
+    font-family: 'Open Sans';
+    src: url('/fonts/OpenSans-Bold.ttf') format('truetype');
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Open Sans';
+    src: url('/fonts/OpenSans-BoldItalic.ttf') format('truetype');
+    font-weight: 700;
+    font-style: italic;
+    font-display: swap;
+}
+
+/* Open Sans ExtraBold */
+@font-face {
+    font-family: 'Open Sans';
+    src: url('/fonts/OpenSans-ExtraBold.ttf') format('truetype');
+    font-weight: 800;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Open Sans';
+    src: url('/fonts/OpenSans-ExtraBoldItalic.ttf') format('truetype');
+    font-weight: 800;
+    font-style: italic;
+    font-display: swap;
+}
+
+/* Faustina Regular */
+@font-face {
+    font-family: 'Faustina';
+    src: url('/fonts/Faustina-Regular.ttf') format('truetype');
+    font-weight: 400; /* normal */
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Faustina';
+    src: url('/fonts/Faustina-Italic.ttf') format('truetype');
+    font-weight: 400; /* normal */
+    font-style: italic;
+    font-display: swap;
+}
+
+/* Faustina Light */
+@font-face {
+    font-family: 'Faustina';
+    src: url('/fonts/Faustina-Light.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Faustina';
+    src: url('/fonts/Faustina-LightItalic.ttf') format('truetype');
+    font-weight: 300;
+    font-style: italic;
+    font-display: swap;
+}
+
+/* Faustina Medium */
+@font-face {
+    font-family: 'Faustina';
+    src: url('/fonts/Faustina-Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Faustina';
+    src: url('/fonts/Faustina-MediumItalic.ttf') format('truetype');
+    font-weight: 500;
+    font-style: italic;
+    font-display: swap;
+}
+
+/* Faustina SemiBold */
+@font-face {
+    font-family: 'Faustina';
+    src: url('/fonts/Faustina-SemiBold.ttf') format('truetype');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Faustina';
+    src: url('/fonts/Faustina-SemiBoldItalic.ttf') format('truetype');
+    font-weight: 600;
+    font-style: italic;
+    font-display: swap;
+}
+
+/* Faustina Bold */
+@font-face {
+    font-family: 'Faustina';
+    src: url('/fonts/Faustina-Bold.ttf') format('truetype');
+    font-weight: 700; /* bold */
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Faustina';
+    src: url('/fonts/Faustina-BoldItalic.ttf') format('truetype');
+    font-weight: 700; /* bold */
+    font-style: italic;
+    font-display: swap;
+}
+
+/* Faustina ExtraBold */
+@font-face {
+    font-family: 'Faustina';
+    src: url('/fonts/Faustina-ExtraBold.ttf') format('truetype');
+    font-weight: 800;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Faustina';
+    src: url('/fonts/Faustina-ExtraBoldItalic.ttf') format('truetype');
+    font-weight: 800;
+    font-style: italic;
+    font-display: swap;
+}

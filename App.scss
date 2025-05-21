@@ -1,0 +1,78 @@
+/* Variables SCSS */
+$cursor-width: 0.1rem;
+$cursor-height: 1rem;
+$cursor-margin-left: 0.25rem;
+$cursor-animation-duration: 1.15s;
+$cursor-color: currentColor;
+
+/* Continuous scrolling text animation */
+@keyframes scroll-text {
+    0% {
+        transform: translateX(100%);
+    }
+
+    100% {
+        transform: translateX(-100%);
+    }
+}
+
+.text-continous-translate {
+    overflow: hidden;
+    white-space: nowrap;
+
+    span {
+        display: inline-block;
+        width: 100%;
+        animation: scroll-text 22s linear infinite;
+    }
+}
+
+/* === Blinking Cursor Animation === */
+@keyframes blink-caret {
+
+    from,
+    to {
+        background-color: transparent;
+    }
+
+    50% {
+        background-color: $cursor-color;
+    }
+}
+
+.text-with-cursor {
+    position: relative;
+
+    &::after {
+        content: none;
+    }
+
+    &:hover::after,
+    &.active-cursor::after {
+        content: '';
+        display: inline-flex;
+        width: $cursor-width;
+        height: 1em;
+        background-color: $cursor-color;
+        margin-left: $cursor-margin-left;
+        animation: blink-caret $cursor-animation-duration step-start infinite;
+        vertical-align: top;
+    }
+}
+
+/* Blinking cursor animation for TypewriterAnimation */
+@keyframes blink {
+
+    0%,
+    100% {
+        opacity: 1;
+    }
+
+    50% {
+        opacity: 0;
+    }
+}
+
+.animate-blink {
+    animation: blink 1s step-end infinite;
+}
